@@ -1,7 +1,7 @@
 # NeuonSL ReadMe
 
 ## Overview
-NeuonSL is a project designed to enhance the functionality of the SCP Secret Laboratory (SCP: SL) server by integrating the Universal Mod Loader Neuron. Neuron provides a powerful framework for loading plugins and modules while managing their dependencies, making it easier for developers to write APIs within modules that can be utilized by other modules and plugins. Additionally, Neuron includes its own Event System with prioritization and meta-reflection capabilities, allowing seamless interaction with the API through attributes within modules.
+NeuonSL is a project designed to enhance the functionality of the SCP Secret Laboratory (SCP: SL) server by integrating the Universal Mod Loader [Neuron](https://github.com/AnomalousCoders/Neuron). Neuron provides a powerful framework for loading plugins and modules while managing their dependencies, making it easier for developers to write APIs within modules that can be utilized by other modules and plugins. Additionally, Neuron includes its own Event System with prioritization and meta-reflection capabilities, allowing seamless interaction with the API through attributes within modules.
 
 ## Features
 The NeuonSL project consists of the following core components:
@@ -10,7 +10,7 @@ The NeuonSL project consists of the following core components:
 The core functionality of Neuron is responsible for loading plugins and modules, resolving dependencies, and providing a solid foundation for extending the SCP: SL server.
 
 ### 2. Patcher Module
-The Patcher Module utilizes Harmony to enable the execution of patches solely through attributes. This module streamlines the process of making modifications to the game by allowing developers to easily apply changes through attributes without having to modify the game's original code.
+The Patcher Module utilizes [Harmony](https://github.com/pardeike/Harmony) to enable the execution of patches solely through attributes. This module streamlines the process of making modifications to the game by allowing developers to easily apply changes through attributes without having to modify the game's original code.
 
 ### 3. Command Module
 The Command Module offers an API for creating new command handlers and consoles quickly. It simplifies the process of implementing custom commands within the SCP: SL environment.
