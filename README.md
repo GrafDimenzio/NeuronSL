@@ -1,4 +1,4 @@
-# NeuonSL ReadMe
+# NeuonSL
 
 ## Overview
 NeuonSL is a project designed to enhance the functionality of the SCP Secret Laboratory (SCP: SL) server by integrating the Universal Mod Loader [Neuron](https://github.com/AnomalousCoders/Neuron). Neuron provides a powerful framework for loading plugins and modules while managing their dependencies, making it easier for developers to write APIs within modules that can be utilized by other modules and plugins. Additionally, Neuron includes its own Event System with prioritization and meta-reflection capabilities, allowing seamless interaction with the API through attributes within modules.
