@@ -140,5 +140,5 @@ public class PermissionPlayerFactory : PlayerFactory
 {
     public override Type BaseType => typeof(PermissionPlayer);
 
-    public override IPlayer Create(IGameComponent component) => new PermissionPlayer(component);
+    public override Player Create(IGameComponent component) => new PermissionPlayer(component);
 }

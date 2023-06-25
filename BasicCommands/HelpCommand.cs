@@ -117,14 +117,14 @@ public class HelpCommand : NeuronCommand
             msg += "\n";
         }
 
-        msg += "\n" + "All Available Synapse Commands:";
+        msg += "\n" + "All Available Neuron Commands:";
 
         foreach (var customCommand in customCommands)
         {
-            if (customCommand.Meta is NeuronCommandAttribute synapseCommandAttribute)
+            if (customCommand.Meta is NeuronCommandAttribute neuronCommandAttribute)
             {
-                if (!string.IsNullOrWhiteSpace(synapseCommandAttribute.Permission) &&
-                    !player.HasPermission(synapseCommandAttribute.Permission)) continue;
+                if (!string.IsNullOrWhiteSpace(neuronCommandAttribute.Permission) &&
+                    !player.HasPermission(neuronCommandAttribute.Permission)) continue;
             }
 
             msg += $"\n{customCommand.Meta.CommandName}";
@@ -160,13 +160,13 @@ public class HelpCommand : NeuronCommand
             msg += $"\n    Aliases: " + string.Join(", ", command.Meta.Aliases);
         }
 
-        if (command.Meta is NeuronCommandAttribute synapseCommandAttribute)
+        if (command.Meta is NeuronCommandAttribute neuronCommandAttribute)
         {
-            msg += $"\n    Platforms: " + string.Join(", ", synapseCommandAttribute.Platforms);
+            msg += $"\n    Platforms: " + string.Join(", ", neuronCommandAttribute.Platforms);
 
-            if (!string.IsNullOrWhiteSpace(synapseCommandAttribute.Permission))
+            if (!string.IsNullOrWhiteSpace(neuronCommandAttribute.Permission))
             {
-                msg += "\n    Permission: " + synapseCommandAttribute.Permission;
+                msg += "\n    Permission: " + neuronCommandAttribute.Permission;
             }
         }
 
